@@ -103,13 +103,6 @@ task-manager/
 ```
 
 ---
-
-## Screenshots
-
-### Task Management Dashboard
-
----
-
 ## Contributing
 
 We welcome contributions from the community! Here’s how you can contribute:
