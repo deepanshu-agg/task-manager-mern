@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type='text'] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 5px 0;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+
+.task-item:hover {
+  background-color: #f1f8ff; /* Light blue on hover for better UX */
+}
+
+.task-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.task-item p {
+  margin: 0;
+  color: #555;
+}
+/* .task-item button {
+  margin-left: 10px;
+} */
+
+.task-item-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-button {
+  margin-right: 2px; /* Align 2px left to the Delete button */
+}
+
+.delete-button {
+  margin-left: 2px; /* To ensure spacing looks balanced */
+}
+
+.task-checkbox {
+  margin-left: 15px;
+  transform: scale(1.2); /* Slightly enlarge checkbox */
+  cursor: pointer;
+}
+.edit-button {
+  margin-right: 2px; /* Align 2px left to the Delete button */
+}
+
+.delete-button {
+  margin-left: 2px; /* To ensure spacing looks balanced */
+}
+
+.task-checkbox {
+  margin-left: 15px;
+  transform: scale(1.2); /* Slightly enlarge checkbox */
+  cursor: pointer;
+}
+
+
+.checkbox-label {
+  margin-left: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.task-item-buttons button {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.task-manager {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.message.error {
+  background-color: #f44336;
+  color: white;
+}
+/* Popup Message Styles */
+.popup-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  color: white;
+  z-index: 1000;
+  opacity: 1;
+  animation: fadeInOut 2s ease-in-out forwards;
+}
+
+.popup-message.success {
+  background-color: #28a745; /* Green for success */
+}
+
+.popup-message.error {
+  background-color: #dc3545; /* Red for error */
+}
+
+/* Smooth fade in and out animation */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  90% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+}
+
+/* Filter styles */
+.filter-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.filter-select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}

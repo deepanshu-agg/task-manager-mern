@@ -1,0 +1,16 @@
+{
+  "name": "task-manager-mern",
+  "version": "1.0.0",
+  "description": "MERN Task Manager Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server --prefix backend\" \"npm start --prefix frontend\"",
+    "server": "nodemon backend/index.js",
+    "client": "npm start --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {}
+}
